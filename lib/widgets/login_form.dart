@@ -44,10 +44,19 @@ class _LoginFormState extends State<LoginForm> {
             decoration: const InputDecoration(labelText: 'Select Role'),
           ),
           const SizedBox(height: 20),
-          ElevatedButton(
-            onPressed: () => controller.handleLogin(context),
-            child: const Text('Login'),
+
+          AnimatedBuilder(
+              animation: controller,
+              builder: (_, __) {
+                return controller.isLoading
+                    ? CircularProgressIndicator(color: Colors.indigo,)
+                    : ElevatedButton(
+                  onPressed: () => controller.handleLogin(context),
+                  child: const Text('Login'),
+                );
+              }
           ),
+
           TextButton(
             onPressed: () {
               Navigator.push(

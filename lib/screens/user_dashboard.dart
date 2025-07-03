@@ -5,7 +5,14 @@ class UserDashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: const Text('User Dashboard')),
+    appBar: AppBar(
+        backgroundColor: Colors.indigo,
+        leading: IconButton(onPressed: (){
+        Navigator.pop(context);},
+            icon: Icon(Icons.arrow_back, color: Colors.white,)),
+        title: const Text('User Dashboard', style: TextStyle(color: Colors.white),),
+        centerTitle: true,
+    ),
     body: const Center(child: Text('Welcome User!')),
   );
 }

@@ -9,3 +9,5 @@ export '../screens/user_dashboard.dart';
 export '../screens/admin_dashboard.dart';
 export '../controllers/login_controller.dart';
 export 'package:role_based_login/widgets/login_form.dart';
+export 'controllers/signup_controller.dart';
+export 'widgets/signup_form.dart';

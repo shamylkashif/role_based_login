@@ -1,19 +1,20 @@
 import 'package:role_based_login/app_importer.dart';
 
-class LoginController extends ChangeNotifier{
+class SignUpController extends ChangeNotifier{
   final formKey = GlobalKey<FormState>();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   String selectedRole = 'user';
   bool isLoading = false;
 
-  Future<void> handleLogin(BuildContext context) async {
+  Future<void> signup(BuildContext context) async {
     if (formKey.currentState!.validate()) {
 
       isLoading = true;
       notifyListeners();
 
-      final error = await AuthService().signInWithEmailAndPassword(
+
+      final error = await AuthService().signUp(
         emailController.text,
         passwordController.text,
         selectedRole,
@@ -23,19 +24,17 @@ class LoginController extends ChangeNotifier{
       notifyListeners();
 
       if (error == null) {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (_) => selectedRole == 'admin'
-                ? const AdminDashboard()
-                : const UserDashboard(),
-          ),
-        );
+        if (context.mounted) Navigator.pop(context);
       } else {
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text(error)));
       }
     }
+  }
+
+  void onRoleChanged(String? val) {
+    selectedRole = val!;
+    notifyListeners();
   }
 
   void dispose() {
