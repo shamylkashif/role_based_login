@@ -52,7 +52,7 @@ lib/
 - Dart
 - MV-like clean architecture
 
-  ---
+---
 
 ## ✨ Author
 
