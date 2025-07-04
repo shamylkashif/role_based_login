@@ -51,9 +51,5 @@ MV-like clean architecture
 
 ✨ Author
 Shamyl Kashif
-
-👨‍💻 Flutter Developer
-
-📬 shamylkashif@gmail.com
-
-🔗 https://www.linkedin.com/in/shamyl-kashif-923bb3259/ | https://github.com/shamylkashif
+BSCS, Flutter Developer
+LinkedIn | GitHub
