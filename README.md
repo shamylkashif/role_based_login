@@ -1,16 +1,56 @@
-# role_based_login
+# 🔐 Role-Based Login App (Flutter + Firebase)
 
-A new Flutter project.
+A simple Flutter application demonstrating **role-based login and signup** using **Firebase Authentication** and **Cloud Firestore**.
 
-## Getting Started
+This project allows users to sign in as either **Admin** or **User**, and they are redirected to their respective dashboards after authentication.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🔒 Role-based login (Admin & User)
+- ✅ Email & password authentication using Firebase Auth
+- ☁️ Role checking using Firestore collections
+- 🔁 Navigation to separate dashboards based on user role
+- 💬 Error handling & form validation
+- 📦 Clean folder structure with controllers, widgets, and services separated
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📁 Folder Structure
+
+lib/
+│
+├── controllers/
+│ ├── login_controller.dart
+│ └── signup_controller.dart
+│
+├── screens/
+│ ├── admin_dashboard.dart
+│ ├── user_dashboard.dart
+│ ├── login_screen.dart
+│ └── signup_screen.dart
+│
+├── services/
+│ └── auth_services.dart
+│
+├── widgets/
+│ ├── login_form.dart
+│ └── signup_form.dart
+│
+├── app_importer.dart
+├── firebase_options.dart
+└── main.dart
+
+📚 Tech Stack
+Flutter
+Firebase Auth
+Cloud Firestore
+Dart
+MV-like clean architecture
+
+✨ Author
+Shamyl Kashif
+👨‍💻 Flutter Developer
+📬 shamylkashif@gmail.com
+🔗 LinkedIn | GitHub
