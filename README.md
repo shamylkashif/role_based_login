@@ -42,22 +42,16 @@ lib/
 ├── firebase_options.dart
 └── main.dart
 
-### 📚 Tech Stack
+## 📚 Tech Stack
 
 Flutter
-
 Firebase Auth
-
 Cloud Firestore
-
 Dart
-
 MV-like clean architecture
 
-✨ Author
+## ✨ Author
 
 Shamyl Kashif
-
 BSCS, Flutter Developer
-
 [LinkedIn](https://www.linkedin.com/in/shamyl-kashif-923bb3259/) | [GitHub](https://github.com/shamylkashif)
