@@ -50,6 +50,9 @@ Dart
 MV-like clean architecture
 
 ✨ Author
+
 Shamyl Kashif
+
 BSCS, Flutter Developer
-LinkedIn | GitHub
+
+[LinkedIn](https://www.linkedin.com/in/shamyl-kashif-923bb3259/) | [GitHub](https://github.com/shamylkashif)
